@@ -1,0 +1,15 @@
+{% extends 'template.jinja2' %}
+{% block head %}
+<title>NYT Front Page</title>
+<style>
+img {
+	width: 100%;
+}
+</style>
+{% endblock %}
+{% block body %}
+
+<img src='{{ url_for("static", filename="images/" + today + ".jpg") }}' onerror="this.src='{{ url_for("static", filename="images/" + yesterday + ".jpg") }}'" />
+
+<meta http-equiv="refresh" content="900">
+{% endblock %}
