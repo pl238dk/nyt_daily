@@ -9,7 +9,7 @@ Upon user request, the application grabs a PDF version of the newspaper for the 
 ### When using as a Docker application :
 ```
 docker build -t nyt_daily Dockerfile
-docker run -d -p 5002:80 --name=app nyt_daily
+docker run -d -p 0.0.0.0:5002:80 --name=app nyt_daily
 ```
 Then point your browser to http://localhost!
 
