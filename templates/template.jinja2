@@ -2,8 +2,8 @@
 <html>
 <head>
 	{% block mcv %}
-	<link rel='shortcut icon' href='/nyt{{ url_for("static", filename="favicon.ico") }}'>
-	<link rel='stylesheet' type='text/css' href='/nyt{{ url_for("static", filename="main.css") }}'>
+	<link rel='shortcut icon' href='{{ url_for("static", filename="favicon.ico") }}'>
+	<link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="main.css") }}'>
 	{% endblock %}
 	{% block head %}{% endblock %}
 </head>
