@@ -13,7 +13,7 @@ def main():
     yesterday = today - timedelta(days=1)
     yesterday_str = f'{yesterday.year}-{yesterday.month:02}-{yesterday.day:02}'
     try:
-        open(f'images/{today_str}.jpg','r')
+        open(f'static/images/{today_str}.jpg','r')
     except:
         print('[W] Generating PDF')
         get_pdf()
